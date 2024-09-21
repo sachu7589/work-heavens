@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Heavens Architects </title>
+  <meta name="description"
+    content="Heavens Architects is a leading architecture and interior design company based in Anachal, Idukki. We specialize in providing innovative architectural designs and interior solutions. Contact us for your next project.">
+  <meta name="keywords"
+    content="Heavens Architects, Heavens architects, heavens architects, heavensarchitects, Heavensarchitects, Anachal, Idukki, architecture, interior design, architectural designs, interior solutions">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/site logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* Align children vertically */
+      align-items: center;
+      /* Align children horizontally */
+    }
+
+    .service-item {
+      display: flex;
+      justify-content: center;
+      /* Align items horizontally */
+    }
+
+    .service-item ul {
+      padding: 0;
+    }
+
+    .service-item ul li {
+      display: flex;
+      align-items: center;
+      /* Align items vertically */
+    }
+
+    .service-item ul li i {
+      margin-right: 5px;
+      /* Add some space between the icon and text */
+    }
+
+    .logo-bg {
+      height: 400px;
+      /* Adjust height as per your design */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-padding {
+      padding: 80px 0;
+      /* Adjust top and bottom padding as per your design */
+    }
+
+    .btn-outline-custom {
+      color: #feb900;
+      /* Text color */
+      border-color: #feb900;
+      /* Border color */
+    }
+
+    .btn-outline-custom:hover {
+      background-color: #feb900;
+      /* Background color on hover */
+      color: #fff;
+      /* Text color on hover */
+    }
+    .php-email-form {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto; /* Remove margin space */
+      font-family: Arial, sans-serif;
+    }
+    .php-email-form h3 {
+      color: #364d59;
+      text-align: center;
+      margin: 0; /* Remove margin space */
+    }
+    .php-email-form p {
+      color: #52565e;
+      text-align: center;
+      margin: 0 0 15px 0; /* Adjust margin space */
+    }
+    .php-email-form .form-control {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+    .php-email-form .form-control:focus {
+      border-color: #feb900;
+      outline: none;
+    }
+    .php-email-form .loading,
+    .php-email-form .error-message,
+    .php-email-form .sent-message {
+      display: none;
+      color: #52565e;
+    }
+    .php-email-form .sent-message {
+      color: green;
+    }
+    .php-email-form button[type="submit"] {
+      background: #feb900;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .php-email-form button[type="submit"]:hover {
+      background: #d99b00;
+    }
+    @media (max-width: 600px) {
+      .php-email-form {
+        padding: 15px;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      .col-md-6 {
+        display: none;
+      }
+
+      .col-md-6:first-child {
+        display: block;
+      }
+
+      .logo-bg {
+        margin-top: -140px;
+        margin-bottom: -80px;
+      }
+    }
+    .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Heavens<span> Architects</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <img data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="1000" src="assets/img/logo final.png"
+              alt="Heavens Architects Logo" id="logo" class="hidden" style="height: 150px; width: 300px;"><br>
+            <p data-aos="fade-up" data-aos-delay="800"> We offer professional and certified construction servies with
+              the best team of professionals having more than 20 years of experience in building and renovation.
+              call us today for a quote and get a special discount for your first work with our company.
+            </p>
+            <a data-aos="fade-up" data-aos-delay="3000" href="#constructions" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(assets/img/sl1.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/sl2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/sl3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/sl4.jpg)"></div>
+
+    </div>
+
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+    <section id="get-started" class="get-started section-bg" style="padding: 0; padding-bottom: 20px; background-image: url('assets/img/formcov.jpg'); background-size: cover; background-position: center; ">
+      <div class="container" style="padding: 0;">
+        <div class="row justify-content-center gy-4" style="margin: 0;">
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade" style="padding: 0;">
+            <form class="php-email-form" style="background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px; max-width: 400px; margin: 0 auto; font-family: Arial, sans-serif;">
+              <h3 style="color: #364d59; text-align: center; margin: 0;">Get a quote</h3>
+              <p style="color: #52565e; text-align: center; margin: 0 0 15px 0;">Heavens Architects.</p>
+              <div class="row gy-3" style="margin: 0;">
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="" id="name" style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; width: 100%; box-sizing: border-box; margin-bottom: 15px;">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Subject" required="" id="subject" style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; width: 100%; box-sizing: border-box; margin-bottom: 15px;">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" id="message" style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; width: 100%; box-sizing: border-box; margin-bottom: 15px;"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none; color: #52565e;">Loading</div>
+                  <div class="error-message" style="display: none; color: #52565e;"></div>
+                  <div class="sent-message" style="display: none; color: green;">Your quote request has been sent successfully. Thank you!</div>
+                  <button type="submit" onclick="sendMessage()" style="background: #feb900; border: none; color: #fff; padding: 10px 20px; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Get a quote</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions" style="margin-top: -30px;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(assets/img/cs.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Construction Works</h4>
+                    <p style="text-align: justify;"> Construction works involve building through civil projects, home
+                      remodeling, and carpentry and
+                      welding of structures. Electrical and plumbing ensure safety, while aluminium fabrication and
+                      painting provide durability. Documentation ensures legal compliance, supervision and consultation
+                      ensure standards are met.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(assets/img/ds.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Designing works</h4>
+                    <p style="text-align: justify;">Designing works create functional and appealing spaces through
+                      interior partitioning, ceilings,
+                      flooring, and painting. 3D elevations and floor plans aid decision-making, while estimate
+                      preparation and engineering services ensure safe and efficient construction. These services align
+                      with the client's vision.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" style="margin-top: -40px;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header" style="margin-top: -50px;">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row gy-4" style="margin-top: -40px;">
+          <div class="container">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card-body">
+                    <i class="fas fa-hard-hat fa-3x mb-3"></i>
+                    <h5 class="card-title">Civil works - construction</h5>
+                    <a href="services.html"><b>View more</b> <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card 2 -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card-body">
+                    <i class="fas fa-paint-roller fa-3x mb-3"></i>
+                    <h5 class="card-title">Interior works</h5>
+                    <a href="services.html"><b>View more</b> <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card 3 -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-body">
+                    <i class="fas fa-hammer fa-3x mb-3"></i>
+                    <h5 class="card-title">Home remodeling</h5>
+                    <a href="services.html"><b>View more</b> <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card 4 -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card-body">
+                    <i class="fas fa-tools fa-3x mb-3"></i>
+                    <h5 class="card-title">Carpentry works</h5>
+                    <a href="services.html"><b>View more</b> <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services" style="padding: 80px 0;">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="logo-bg" style="background-image: url(assets/img/logo\ fi.png);"></div>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" style="margin-top: -15px;">
+            <div class="card shadow p-4" style="width: 100%;">
+              <h3>Welcome to Heavens Architects</h3>
+              <p style="text-align: justify;">
+                Welcome to Heavens Architects, located in Idukki, Anachal. With over 20 years of experience, our team of
+                30+ skilled professionals specializes in top-quality construction and renovation services.
+
+                Whether you're planning to build a new home, remodel your space, or embark on a commercial project,
+                we're committed to bringing your vision to life with expertise and precision.
+
+                Contact us today for a personalized quote and enjoy a special discount on your first project with
+                Heavens Architects.
+              </p>
+
+              <div class="btn-group">
+                <a href="about.html" class="btn btn-outline-custom btn-sm">About</a>
+                <a href="contact.html" class="btn btn-outline-custom btn-sm">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Alt Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg" style="margin-top: -40px;">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row g-2 d-flex" style="margin-top: -50px;">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Designing</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Structure</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Interior</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Renovation</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+        </ul>
+
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3>Architectural Design</h3>
+                <ul>
+                  <li><i class="fas fa-hard-hat"></i> <b>2D Floor Plans :</b> Detailed drawings that show the layout of
+                    rooms, walls, doors, and windows from a top-down view.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>3D Models :</b> Three-dimensional representations of buildings
+                    or structures, providing a realistic view of how the project will look.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Elevations :</b> Drawings that show the exterior views of the
+                    building, illustrating the facade and architectural details.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Sections :</b> Vertical views that cut through the building to
+                    show interior details, such as wall thicknesses and structural components.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/ard.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3> Structural Works</h3>
+                <ul>
+                  <li><i class="fas fa-hard-hat"></i> <b>Foundation Construction :</b> The foundation is the base of any structure and must be designed to support the loads of the building.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Framing and Load-Bearing Structures :</b> Framing includes constructing the skeletal structure of the building using materials like steel, wood, or concrete.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Reinforcement :</b> Reinforcement involves using steel bars (rebar) or mesh within concrete to improve its tensile strength.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Roof and Floor Systems :</b> Designing and constructing roof and floor systems that provide adequate support and meet the functional needs of the building.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/sw.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+          <div class="tab-pane " id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3>Interior Works</h3>
+                <ul>
+                  <li><i class="fas fa-hard-hat"></i> <b>Space Planning and Layout :</b> Ensuring the interior spaces are designed for optimal functionality and flow. This includes considering the placement of furniture, fixtures, and equipment to enhance usability and comfort.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Finishes and Materials :</b> Selecting finishes and materials (such as flooring, wall coverings, and ceilings) that enhance the visual appeal and style of the interior spaces.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Lighting Design :</b> Balancing natural light with artificial lighting to create a well-lit, comfortable environment. This includes the placement of windows, skylights, and light fixtures.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Interior Detailing and Customization :</b> Designing and installing custom cabinetry, built-ins, and woodwork to maximize storage and aesthetic appeal.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/inw.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+          <div class="tab-pane " id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3>Renovation Works</h3>
+                <ul>
+                  <li><i class="fas fa-hard-hat"></i> <b>Planning and Design :</b>Conduct a thorough assessment of the existing structure to identify areas needing improvement</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Regulatory Compliance :</b>  Ensure that all renovation activities comply with local building codes, zoning regulations, and safety standards.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Budgeting and Cost Management :</b>Create a detailed budget that includes all anticipated costs, such as materials, labor, permits, and contingencies. Monitor expenses throughout the project to stay within budget.</li>
+                  <li><i class="fas fa-hard-hat"></i> <b>Execution and Quality Control :</b> Coordinate and manage all aspects of the renovation project, including scheduling, procurement, and communication with contractors and subcontractors.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/renov.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="margin-top: -35px;">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-info">
+              <h3>Heavens Architects</h3>
+              <p>
+                Anachal, Idukki <br>
+                Kanacheril building <br>
+                Opposite to st. George church <br><br>
+                <strong>Phone:</strong> +91 79026 96738<br>
+                <strong>Email:</strong> contact@heavensarchitects.in<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="tel:+917902696738" class="d-flex align-items-center justify-content-center" target="_blank"><i
+                    class="bi bi-telephone"></i></a>
+                <a href="https://www.instagram.com/heavens1175?igsh=MTUzbTZtaG9ocW5paw=="
+                  class="d-flex align-items-center justify-content-center" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+                <a href="mailto:contact@heavensarchitects.in" class="d-flex align-items-center justify-content-center"
+                  target="_blank"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Design and plan</a></li>
+              <li><a href="#">Strcuture works</a></li>
+              <li><a href="#">Interior works</a></li>
+              <li><a href="#">Maintenance</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Heavens Architects</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script>
+    function sendMessage() {
+      // Show loading message
+      document.querySelector('.loading').style.display = 'block';
+
+      var name = document.getElementById('name').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+
+      if (!name || !subject || !message) {
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.error-message').textContent = 'All fields are required.';
+        document.querySelector('.error-message').style.display = 'block';
+        return;
+      }
+
+      var fullMessage = `Name: ${name}\nSubject: ${subject}\nMessage: ${message}`;
+      var encodedMessage = encodeURIComponent(fullMessage);
+      var whatsappNumber = '+917902696738'; // Replace with the target WhatsApp number in international format
+      var whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      // Open WhatsApp URL
+      window.open(whatsappUrl, '_blank');
+
+      // Hide loading and show sent message
+      document.querySelector('.loading').style.display = 'none';
+      document.querySelector('.sent-message').style.display = 'block';
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
